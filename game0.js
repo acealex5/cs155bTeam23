@@ -112,7 +112,7 @@ The user moves a cube around the board trying to knock balls into a cone
 				loader.load("../models/suzanne.json",
 				function ( geometry, materials ) {
 					var texture = new THREE.TextureLoader().load( '../images/cement.jpg' );
-					var material = new THREE.MeshLambertMaterial( { color: 0xF0FFFF, material: texture, side:THREE.DoubleSide} );
+					var material = new THREE.MeshLambertMaterial( { color: 0xDC143C, material: texture, side:THREE.DoubleSide} );
 					var pmaterial = new Physijs.createMaterial(material,0.9,0.5);
 					avatar = new Physijs.BoxMesh( geometry, pmaterial );
 					avatar.setDamping(0.1,0.1);
